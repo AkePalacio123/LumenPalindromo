@@ -1,0 +1,778 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-lowest": "#ffffff", "on-surface-variant": "#434655", "surface-bright": "#f8f9ff", "background": "#f8f9ff", "on-secondary-fixed": "#131b2e", "outline": "#747686", "on-tertiary-fixed": "#2a1700", "primary-container": "#1d4ed8", "on-surface": "#0b1c30", "tertiary": "#623c00", "on-tertiary-container": "#ffcb8f", "on-secondary-container": "#5c647a", "on-error-container": "#93000a", "surface-container-high": "#dce9ff", "on-secondary": "#ffffff", "outline-variant": "#c4c5d7", "primary-fixed": "#dce1ff", "surface-tint": "#2151da", "surface-variant": "#d3e4fe", "inverse-primary": "#b7c4ff", "secondary": "#565e74", "primary-fixed-dim": "#b7c4ff", "on-tertiary-fixed-variant": "#653e00", "surface": "#f8f9ff", "on-primary": "#ffffff", "on-error": "#ffffff", "surface-container-highest": "#d3e4fe", "inverse-surface": "#213145", "on-secondary-fixed-variant": "#3f465c", "inverse-on-surface": "#eaf1ff", "on-background": "#0b1c30", "tertiary-fixed": "#ffddb8", "primary": "#0037b0", "secondary-container": "#dae2fd", "secondary-fixed": "#dae2fd", "surface-dim": "#cbdbf5", "on-tertiary": "#ffffff", "on-primary-fixed-variant": "#0039b5", "error-container": "#ffdad6", "error": "#ba1a1a", "tertiary-container": "#825100", "on-primary-fixed": "#001551", "tertiary-fixed-dim": "#ffb95f", "surface-container": "#e5eeff", "on-primary-container": "#cad3ff", "secondary-fixed-dim": "#bec6e0", "surface-container-low": "#eff4ff" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "gutter": "1rem", "gutter-compact": "0.5rem", "space-xs": "0.25rem", "space-sm": "0.375rem", "margin": "1.5rem", "space-lg": "1.25rem", "margin-compact": "1rem", "space-md": "0.75rem", "space-xl": "1.75rem" }, "fontFamily": { "code-data": [ "JetBrains Mono" ], "headline-lg": [ "Inter" ], "body-lg": [ "Inter" ], "headline-md": [ "Inter" ], "label-md": [ "Inter" ], "headline-xl": [ "Inter" ], "headline-sm": [ "Inter" ], "label-lg": [ "Inter" ], "body-sm": [ "Inter" ], "body-md": [ "Inter" ] }, "fontSize": { "code-data": [ "12px", { "lineHeight": "16px", "letterSpacing": "-0.01em", "fontWeight": "500" } ], "headline-lg": [ "22px", { "lineHeight": "28px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "body-lg": [ "15px", { "lineHeight": "22px", "fontWeight": "400" } ], "headline-md": [ "18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "label-md": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" } ], "headline-xl": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "headline-sm": [ "15px", { "lineHeight": "20px", "letterSpacing": "-0.005em", "fontWeight": "600" } ], "label-lg": [ "13px", { "lineHeight": "16px", "fontWeight": "600" } ], "body-sm": [ "12px", { "lineHeight": "16px", "fontWeight": "400" } ], "body-md": [ "13px", { "lineHeight": "18px", "fontWeight": "400" } ] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-64 bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between select-none"><div class="flex flex-col flex-1 min-h-0"><div class="h-16 px-space-lg flex items-center gap-space-md shrink-0 bg-surface-container-low"><img alt="SIGCT Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3hWgo9W-TKapPFMlQj-vSuoGixdBEZWXbSq8pYjL6J58E0W71JLlXbSDqxcF1d2YbY53kttLkay9dh6ivVOVtXRx_4fDrRgtSkHLzpMR6lMHA7UnekNAsugheZXmHVPy33tT2GboqdFfMeumwzk8uETGWWgSqGcLFgi9LGfLXTPFRY0c0LZdPQDZ3ijYgziQzxFmbVZXpa-EZcgK9o1PhCi6p1KZhtGs7qvXI-F34"><div class="flex flex-col leading-tight min-w-0"><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-bold truncate">SIGCT</span><span class="font-label-md text-label-md text-on-surface-variant truncate uppercase tracking-wider">Logistics ERP</span></div></div><div class="px-space-md py-space-sm shrink-0"><div class="bg-surface-container px-space-md py-space-xs rounded flex items-center justify-between"><span class="font-label-md text-label-md text-on-surface-variant uppercase">Entorno</span><span class="inline-flex items-center gap-1 font-code-data text-code-data text-primary"><span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>PROD-v4.2</span></div></div><nav class="flex-1 px-space-sm py-space-xs overflow-y-auto space-y-space-xs" data-active-classes="bg-primary text-on-primary font-semibold shadow-[0_1px_3px_0_rgba(15,23,42,0.08)]"><a aria-current="page" class="flex items-center gap-space-md px-space-md py-space-sm rounded transition-colors bg-primary text-on-primary font-semibold shadow-[0_1px_3px_0_rgba(15,23,42,0.08)]" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[18px]">space_dashboard</span><span class="font-label-lg text-label-lg">Dashboard</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="viajes" href="#"><span class="material-symbols-outlined text-[18px]">route</span><span class="font-label-lg text-label-lg">Viajes</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="flotilla" href="#"><span class="material-symbols-outlined text-[18px]">local_shipping</span><span class="font-label-lg text-label-lg">Unidades (Flotilla)</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="operadores" href="#"><span class="material-symbols-outlined text-[18px]">badge</span><span class="font-label-lg text-label-lg">Operadores</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="diesel" href="#"><span class="material-symbols-outlined text-[18px]">local_gas_station</span><span class="font-label-lg text-label-lg">Diésel</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="mantenimiento" href="#"><span class="material-symbols-outlined text-[18px]">build</span><span class="font-label-lg text-label-lg">Mantenimiento</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="pagos" href="#"><span class="material-symbols-outlined text-[18px]">payments</span><span class="font-label-lg text-label-lg">Pagos</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="documentos" href="#"><span class="material-symbols-outlined text-[18px]">description</span><span class="font-label-lg text-label-lg">Documentos</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="reportes" href="#"><span class="material-symbols-outlined text-[18px]">monitoring</span><span class="font-label-lg text-label-lg">Reportes</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="configuracion" href="#"><span class="material-symbols-outlined text-[18px]">settings</span><span class="font-label-lg text-label-lg">Configuración</span></a></nav></div><div class="p-space-md bg-surface-container-low shrink-0 space-y-space-sm"><div class="p-space-sm bg-surface-container-lowest rounded shadow-[0_1px_3px_0_rgba(15,23,42,0.08)] flex items-start gap-space-sm"><span class="material-symbols-outlined text-[18px] text-primary shrink-0 mt-0.5">lan</span><div class="flex flex-col min-w-0"><span class="font-label-md text-label-md text-on-surface font-semibold truncate">Servidor Operativo</span><span class="font-code-data text-[10px] leading-tight text-on-surface-variant truncate">Base Central • Latencia 18ms</span></div></div><div class="flex items-center justify-between pt-space-xs text-on-surface-variant"><a class="inline-flex items-center gap-1 font-label-md text-label-md hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[16px]">support_agent</span>Soporte</a><a class="inline-flex items-center gap-1 font-label-md text-label-md text-error hover:text-on-error-container transition-colors" href="#"><span class="material-symbols-outlined text-[16px]">logout</span>Salir</a></div></div></aside><div class="pl-64 flex flex-col min-h-screen"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md min-w-0 flex-1 max-w-xl"><div class="relative w-full"><span class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-[18px] text-outline pointer-events-none">search</span><input class="w-full h-8 pl-9 pr-space-lg bg-surface-container-low text-on-surface placeholder:text-outline font-body-sm text-body-sm rounded outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary transition-all" placeholder="Buscar folio, unidad (T-01), operador, carta porte... (Ctrl+K)" type="text"></div></div><div class="flex items-center gap-space-md shrink-0"><div class="flex items-center gap-space-xs px-space-sm py-1 bg-surface-container-low rounded text-on-surface"><span class="material-symbols-outlined text-[16px] text-primary">warehouse</span><select class="bg-transparent font-label-md text-label-md text-on-surface font-semibold outline-none cursor-pointer pr-space-xs"><option value="mty">Base Monterrey - Matriz</option><option value="gdl">Base Guadalajara</option><option value="cdmx">Base CDMX</option></select></div><button class="h-8 px-space-md bg-primary-container text-on-primary font-label-lg text-label-lg rounded hover:bg-primary transition-colors flex items-center gap-space-xs shadow-[0_1px_3px_0_rgba(15,23,42,0.08)]"><span class="material-symbols-outlined text-[16px]">add_circle</span><span>Nuevo Viaje</span></button><button class="relative p-space-sm text-on-surface-variant hover:text-on-surface rounded hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1 right-1 flex h-4 w-4 items-center justify-center rounded-full bg-error text-on-error font-label-md text-[9px] font-bold">4</span></button><div class="flex items-center gap-space-md pl-space-sm"><div class="flex items-center gap-space-sm cursor-pointer"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-[0_1px_3px_0_rgba(15,23,42,0.08)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxnYBhh75NOvYPMdoZcKtckSV63zP-t3AtbWEOwljXOjn5YKxkZF67PJ7hMnbFYntNKZth-NM5mAHk-bfsHRvG5rUfmHlnV0I8ICAW7j4MK7oNRygiZsuzGO_FsGcfpPKVvn_HJUMu2ZmTOrrdp9zrv6YU_TZaI8g2-x4GqulcW4OB6jIZcpbokR_jqi8DlB8_jwHvP3lbErpmZoY1KDcjickgQGStlCgh2D_63z1l"><div class="hidden xl:flex flex-col text-left"><span class="font-label-lg text-label-lg text-on-surface font-semibold leading-tight">Carlos Mendoza</span><span class="font-label-md text-label-md text-on-surface-variant leading-tight">Admin. de Operaciones</span></div><span class="material-symbols-outlined text-[16px] text-outline">expand_more</span></div></div></div></header><main class="w-full pt-16 bg-surface flex-1 min-h-[calc(100vh-4rem)] p-gutter"><div class="flex flex-col w-full gap-space-lg">
+<!-- Header Banner & Action Bar -->
+<div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-space-md bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center justify-center p-1.5 rounded-lg bg-surface-container text-primary">
+<span class="material-symbols-outlined text-[20px]">analytics</span>
+</span>
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">Dashboard Operativo y Financiero</h1>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed text-label-md font-code-data font-semibold">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+          TIEMPO REAL
+        </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Resumen en tiempo real del estado de flota, fletes y balance operativo — Octubre 2024</p>
+</div>
+<!-- Filters & Executive Export -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="inline-flex items-center p-1 bg-surface-container-low rounded-lg gap-0.5" id="period-selector">
+<button class="px-space-md py-1 rounded text-label-md font-label-md text-on-surface-variant hover:text-on-surface transition-colors" onclick="setActivePeriod(this)">Hoy</button>
+<button class="px-space-md py-1 rounded text-label-md font-label-md text-on-surface-variant hover:text-on-surface transition-colors" onclick="setActivePeriod(this)">Esta semana</button>
+<button class="px-space-md py-1 rounded bg-surface-container-lowest text-primary shadow-sm text-label-md font-label-md font-bold transition-all" onclick="setActivePeriod(this)">Mes actual</button>
+<button class="px-space-md py-1 rounded text-label-md font-label-md text-on-surface-variant hover:text-on-surface transition-colors" onclick="setActivePeriod(this)">Trimestre</button>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="h-8 px-space-md bg-surface-container-low hover:bg-surface-container text-on-surface font-label-lg text-label-lg rounded flex items-center gap-space-xs transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">tune</span>
+<span>Filtros</span>
+</button>
+<button class="h-8 px-space-md bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg rounded flex items-center gap-space-xs transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+<span>Exportar Reporte</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Critical Operational Notices / Ticker Bar -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Notice 1 -->
+<div class="flex items-center justify-between p-space-md bg-error-container text-on-error-container rounded-lg shadow-sm">
+<div class="flex items-center gap-space-md">
+<span class="p-2 rounded bg-surface-container-lowest text-error flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">shield_with_heart</span>
+</span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold text-on-error-container">Vencimiento de Póliza en 5 Días</span>
+<span class="font-body-sm text-body-sm text-on-error-container/90">Tractocamión <span class="font-code-data font-bold">T-102 (Kenworth T680)</span> póliza Qualitas vence el 31/Oct/2024.</span>
+</div>
+</div>
+<button class="px-space-md py-1 bg-surface-container-lowest text-error font-label-md text-label-md font-bold rounded shadow-sm hover:bg-surface transition-colors shrink-0">
+        Gestionar
+      </button>
+</div>
+<!-- Notice 2 -->
+<div class="flex items-center justify-between p-space-md bg-surface-container-high text-on-surface rounded-lg shadow-sm">
+<div class="flex items-center gap-space-md">
+<span class="p-2 rounded bg-surface-container-lowest text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">document_scanner</span>
+</span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">3 Cartas Porte Pendientes de Timbrado</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Folios <span class="font-code-data font-semibold">CP-8902, CP-8904, CP-8911</span> en cola SAT v3.1 para despacho de turno noche.</span>
+</div>
+</div>
+<button class="px-space-md py-1 bg-primary text-on-primary font-label-md text-label-md font-bold rounded shadow-sm hover:bg-primary-container transition-colors shrink-0">
+        Timbrar Todo
+      </button>
+</div>
+</div>
+<!-- KPI Metric Cards Grid (6 items) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-6 gap-space-md">
+<!-- KPI 1: Viajes del Mes -->
+<div class="flex flex-col justify-between p-space-md bg-surface-container-lowest rounded-xl shadow-sm relative overflow-hidden group">
+<div class="absolute top-0 left-0 right-0 h-1 bg-primary"></div>
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant font-semibold">Viajes del Mes</span>
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold mt-1">184 <span class="font-body-sm text-body-sm text-on-surface-variant font-normal">viajes</span></span>
+</div>
+<div class="p-2 rounded-lg bg-surface-container-low text-primary">
+<span class="material-symbols-outlined text-[20px]">local_shipping</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-space-md pt-space-xs">
+<span class="inline-flex items-center gap-1 font-code-data text-code-data font-semibold text-primary bg-surface-container px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+          +12.4%
+        </span>
+<svg class="w-16 h-7 text-primary" fill="none" viewBox="0 0 64 24">
+<path d="M2 20 L14 16 L26 18 L38 10 L50 12 L62 4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<span class="font-code-data text-[11px] text-on-surface-variant mt-1">vs. 164 mes anterior</span>
+</div>
+<!-- KPI 2: Viajes Activos -->
+<div class="flex flex-col justify-between p-space-md bg-surface-container-lowest rounded-xl shadow-sm relative overflow-hidden group">
+<div class="absolute top-0 left-0 right-0 h-1 bg-surface-tint"></div>
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant font-semibold">En Tránsito</span>
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold mt-1">28 <span class="font-body-sm text-body-sm text-on-surface-variant font-normal">en ruta</span></span>
+</div>
+<div class="p-2 rounded-lg bg-surface-variant text-surface-tint">
+<span class="material-symbols-outlined text-[20px]">explore</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-space-md pt-space-xs">
+<span class="inline-flex items-center gap-1 font-label-md text-label-md font-semibold text-primary-container bg-surface-container px-2 py-0.5 rounded-full">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-ping"></span>
+          4 retornos prog.
+        </span>
+<svg class="w-16 h-7 text-surface-tint" fill="none" viewBox="0 0 64 24">
+<path d="M2 14 L14 12 L26 16 L38 8 L50 6 L62 9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<span class="font-code-data text-[11px] text-on-surface-variant mt-1">100% monitoreo GPS</span>
+</div>
+<!-- KPI 3: Pagos Pendientes -->
+<div class="flex flex-col justify-between p-space-md bg-surface-container-lowest rounded-xl shadow-sm relative overflow-hidden group">
+<div class="absolute top-0 left-0 right-0 h-1 bg-tertiary"></div>
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant font-semibold">Por Cobrar</span>
+<span class="font-headline-md text-headline-md text-on-surface font-bold mt-1 tracking-tight">$428,500 <span class="font-body-sm text-body-sm text-on-surface-variant font-normal">MXN</span></span>
+</div>
+<div class="p-2 rounded-lg bg-surface-container text-tertiary">
+<span class="material-symbols-outlined text-[20px]">receipt_long</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-space-md pt-space-xs">
+<span class="inline-flex items-center gap-1 font-label-md text-label-md font-semibold text-on-tertiary-fixed bg-tertiary-fixed px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[13px]">schedule</span>
+          8 facturas pendientes
+        </span>
+<svg class="w-16 h-7 text-tertiary" fill="none" viewBox="0 0 64 24">
+<path d="M2 8 L14 12 L26 10 L38 18 L50 14 L62 20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<span class="font-code-data text-[11px] text-tertiary font-semibold mt-1">2 vencimientos &lt; 48h</span>
+</div>
+<!-- KPI 4: Unidades Activas -->
+<div class="flex flex-col justify-between p-space-md bg-surface-container-lowest rounded-xl shadow-sm relative overflow-hidden group">
+<div class="absolute top-0 left-0 right-0 h-1 bg-primary"></div>
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant font-semibold">Flota Activa</span>
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold mt-1">34 <span class="font-body-sm text-body-sm text-on-surface-variant font-normal">/ 38 tractos</span></span>
+</div>
+<div class="p-2 rounded-lg bg-surface-container text-primary">
+<span class="material-symbols-outlined text-[20px]">rv_hookup</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-space-md pt-space-xs">
+<span class="inline-flex items-center gap-1 font-code-data text-code-data font-bold text-primary bg-surface-container px-2 py-0.5 rounded-full">
+          89.5%
+        </span>
+<div class="flex-1 ml-2 bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 89.5%;"></div>
+</div>
+</div>
+<span class="font-code-data text-[11px] text-on-surface-variant mt-1">4 unidades no asignadas</span>
+</div>
+<!-- KPI 5: En Mantenimiento -->
+<div class="flex flex-col justify-between p-space-md bg-surface-container-lowest rounded-xl shadow-sm relative overflow-hidden group">
+<div class="absolute top-0 left-0 right-0 h-1 bg-error"></div>
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant font-semibold">Mantenimiento</span>
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold mt-1">4 <span class="font-body-sm text-body-sm text-on-surface-variant font-normal">unidades</span></span>
+</div>
+<div class="p-2 rounded-lg bg-error-container text-error">
+<span class="material-symbols-outlined text-[20px]">engineering</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-space-md pt-space-xs">
+<span class="inline-flex items-center gap-1 font-label-md text-label-md font-semibold text-error bg-error-container px-2 py-0.5 rounded-full">
+          2 prev. / 2 corr.
+        </span>
+<span class="material-symbols-outlined text-[18px] text-error">build_circle</span>
+</div>
+<span class="font-code-data text-[11px] text-error font-medium mt-1">T-108 salida estimada hoy</span>
+</div>
+<!-- KPI 6: Gasto de Diésel -->
+<div class="flex flex-col justify-between p-space-md bg-surface-container-lowest rounded-xl shadow-sm relative overflow-hidden group">
+<div class="absolute top-0 left-0 right-0 h-1 bg-secondary"></div>
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant font-semibold">Gasto Diésel</span>
+<span class="font-headline-md text-headline-md text-on-surface font-bold mt-1 tracking-tight">$312,840 <span class="font-body-sm text-body-sm text-on-surface-variant font-normal">MXN</span></span>
+</div>
+<div class="p-2 rounded-lg bg-surface-container-high text-secondary">
+<span class="material-symbols-outlined text-[20px]">local_gas_station</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-space-md pt-space-xs">
+<span class="inline-flex items-center gap-1 font-code-data text-code-data font-semibold text-on-secondary-container bg-surface-container px-2 py-0.5 rounded-full">
+          2.45 km/L prom
+        </span>
+<span class="font-code-data text-[11px] text-on-surface-variant">14,220 L</span>
+</div>
+<span class="font-code-data text-[11px] text-primary font-semibold mt-1">-3.1% eficiencia térmica</span>
+</div>
+</div>
+<!-- Analytics and Operational Charts Section -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Chart 1: Volumen de Viajes y Cumplimiento Mensual (8 cols) -->
+<div class="lg:col-span-8 bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-space-sm mb-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">query_stats</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Volumen de Viajes y Cumplimiento Mensual</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Comparativa semestral de despachos completados vs. fletes proyectados</p>
+</div>
+<!-- Legends -->
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-1.5 font-label-md text-label-md text-on-surface-variant">
+<span class="w-3 h-3 rounded bg-primary"></span>
+<span>Completados</span>
+</div>
+<div class="flex items-center gap-1.5 font-label-md text-label-md text-on-surface-variant">
+<span class="w-3 h-3 rounded bg-surface-container-highest"></span>
+<span>Meta Objetivo</span>
+</div>
+</div>
+</div>
+<!-- Custom SVG & Bars Visualization -->
+<div class="w-full bg-surface-container-low rounded-xl p-space-md">
+<!-- SVG Trend Curve Line Overlay -->
+<div class="relative h-56 w-full flex items-end justify-between px-4 pb-2">
+<!-- Background Grid Lines -->
+<div class="absolute inset-0 flex flex-col justify-between pointer-events-none py-2 px-4 opacity-40">
+<div class="w-full border-b border-outline-variant/30 flex justify-end"><span class="font-code-data text-[10px] text-on-surface-variant">200 viajes</span></div>
+<div class="w-full border-b border-outline-variant/30 flex justify-end"><span class="font-code-data text-[10px] text-on-surface-variant">150 viajes</span></div>
+<div class="w-full border-b border-outline-variant/30 flex justify-end"><span class="font-code-data text-[10px] text-on-surface-variant">100 viajes</span></div>
+<div class="w-full border-b border-outline-variant/30 flex justify-end"><span class="font-code-data text-[10px] text-on-surface-variant">50 viajes</span></div>
+</div>
+<!-- Bar 1: Mayo -->
+<div class="flex flex-col items-center gap-2 z-10 w-12 group cursor-pointer">
+<div class="font-code-data text-[11px] font-bold text-on-surface opacity-0 group-hover:opacity-100 transition-opacity">142</div>
+<div class="w-8 flex items-end bg-surface-container rounded-t h-40 overflow-hidden">
+<div class="w-full bg-primary/70 group-hover:bg-primary transition-all rounded-t" style="height: 71%;"></div>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant group-hover:text-primary font-semibold">MAY</span>
+</div>
+<!-- Bar 2: Junio -->
+<div class="flex flex-col items-center gap-2 z-10 w-12 group cursor-pointer">
+<div class="font-code-data text-[11px] font-bold text-on-surface opacity-0 group-hover:opacity-100 transition-opacity">156</div>
+<div class="w-8 flex items-end bg-surface-container rounded-t h-40 overflow-hidden">
+<div class="w-full bg-primary/70 group-hover:bg-primary transition-all rounded-t" style="height: 78%;"></div>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant group-hover:text-primary font-semibold">JUN</span>
+</div>
+<!-- Bar 3: Julio -->
+<div class="flex flex-col items-center gap-2 z-10 w-12 group cursor-pointer">
+<div class="font-code-data text-[11px] font-bold text-on-surface opacity-0 group-hover:opacity-100 transition-opacity">168</div>
+<div class="w-8 flex items-end bg-surface-container rounded-t h-40 overflow-hidden">
+<div class="w-full bg-primary/70 group-hover:bg-primary transition-all rounded-t" style="height: 84%;"></div>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant group-hover:text-primary font-semibold">JUL</span>
+</div>
+<!-- Bar 4: Agosto -->
+<div class="flex flex-col items-center gap-2 z-10 w-12 group cursor-pointer">
+<div class="font-code-data text-[11px] font-bold text-on-surface opacity-0 group-hover:opacity-100 transition-opacity">151</div>
+<div class="w-8 flex items-end bg-surface-container rounded-t h-40 overflow-hidden">
+<div class="w-full bg-primary/70 group-hover:bg-primary transition-all rounded-t" style="height: 75.5%;"></div>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant group-hover:text-primary font-semibold">AGO</span>
+</div>
+<!-- Bar 5: Septiembre -->
+<div class="flex flex-col items-center gap-2 z-10 w-12 group cursor-pointer">
+<div class="font-code-data text-[11px] font-bold text-on-surface opacity-0 group-hover:opacity-100 transition-opacity">164</div>
+<div class="w-8 flex items-end bg-surface-container rounded-t h-40 overflow-hidden">
+<div class="w-full bg-primary/70 group-hover:bg-primary transition-all rounded-t" style="height: 82%;"></div>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant group-hover:text-primary font-semibold">SEP</span>
+</div>
+<!-- Bar 6: Octubre (Active Current) -->
+<div class="flex flex-col items-center gap-2 z-10 w-12 group cursor-pointer">
+<div class="font-code-data text-[11px] font-bold text-primary group-hover:scale-110 transition-transform">184</div>
+<div class="w-8 flex items-end bg-surface-container-high rounded-t h-40 overflow-hidden shadow-sm">
+<div class="w-full bg-primary group-hover:bg-primary-container transition-all rounded-t" style="height: 92%;"></div>
+</div>
+<span class="font-label-md text-label-md text-primary font-bold">OCT</span>
+</div>
+</div>
+</div>
+<!-- KPI Summary Row below chart -->
+<div class="grid grid-cols-3 gap-space-md pt-space-md text-center">
+<div class="p-space-sm rounded bg-surface-container-low flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant">Puntualidad en Cita</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">96.8%</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container-low flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant">Kilómetros Totales</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface font-code-data">84,320 km</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container-low flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant">Índice Siniestralidad</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface font-code-data">0.00%</span>
+</div>
+</div>
+</div>
+<!-- Chart 2 & Fleet Status Split (4 cols) -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- Estado de Flota (Ring / Visual Distribution) -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">pie_chart</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Disponibilidad de Flota</h2>
+</div>
+<span class="font-code-data text-code-data text-primary font-bold">Total: 40 Unds.</span>
+</div>
+<div class="flex items-center gap-space-lg my-space-sm">
+<!-- Circular Progress Gauge in SVG -->
+<div class="relative w-32 h-32 shrink-0 flex items-center justify-center">
+<svg class="w-full h-full -rotate-90" viewBox="0 0 36 36">
+<!-- Background Circle -->
+<path class="text-surface-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<!-- Green Active (34/40 = 85%) -->
+<path class="text-primary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="85, 100" stroke-width="3.5"></path>
+<!-- Warning Maint (4/40 = 10%) -->
+<path class="text-tertiary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="10, 100" stroke-dashoffset="-85" stroke-width="3.5"></path>
+</svg>
+<div class="absolute flex flex-col items-center">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">34</span>
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">En Servicio</span>
+</div>
+</div>
+<!-- Fleet Status Details Legend -->
+<div class="flex flex-col gap-space-xs flex-1">
+<div class="flex items-center justify-between p-1.5 rounded bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Operativas</span>
+</div>
+<span class="font-code-data text-code-data text-on-surface font-bold">34 (85%)</span>
+</div>
+<div class="flex items-center justify-between p-1.5 rounded bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">En Taller</span>
+</div>
+<span class="font-code-data text-code-data text-tertiary font-bold">4 (10%)</span>
+</div>
+<div class="flex items-center justify-between p-1.5 rounded bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Fuera Servicio</span>
+</div>
+<span class="font-code-data text-code-data text-secondary font-bold">2 (5%)</span>
+</div>
+</div>
+</div>
+<a class="mt-2 text-center py-1.5 rounded bg-surface-container text-primary hover:bg-surface-container-high transition-colors font-label-lg text-label-lg font-bold flex items-center justify-center gap-1" href="#">
+<span>Ver inventario de unidades</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- Cost Breakdown: Ingresos vs Diésel, Casetas y Viáticos -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col flex-1 justify-between">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-[20px]">account_balance_wallet</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Costos vs Fletes</h2>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant">Margen Bruto: <strong class="text-primary font-code-data">38.2%</strong></span>
+</div>
+<!-- Stacked progress visual -->
+<div class="my-space-md flex flex-col gap-2">
+<div class="flex justify-between font-label-md text-label-md">
+<span class="text-on-surface-variant">Facturación Fletes: <strong class="text-on-surface font-code-data">$1,180,400 MXN</strong></span>
+<span class="text-on-surface-variant">Costos Op: <strong class="text-tertiary font-code-data">$729,840 MXN</strong></span>
+</div>
+<div class="w-full h-3 bg-surface-container rounded-full overflow-hidden flex">
+<div class="bg-secondary h-full" style="width: 42%;" title="Diésel (42%)"></div>
+<div class="bg-primary-container h-full" style="width: 26%;" title="Casetas IAVE (26%)"></div>
+<div class="bg-tertiary h-full" style="width: 14%;" title="Sueldos/Viáticos (14%)"></div>
+<div class="bg-surface-variant h-full" style="width: 18%;" title="Mantenimiento (18%)"></div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-xs font-label-md text-label-md">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded bg-secondary"></span>
+<span class="text-on-surface-variant">Diésel: <span class="font-code-data font-bold text-on-surface">$312,840</span></span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded bg-primary-container"></span>
+<span class="text-on-surface-variant">Casetas: <span class="font-code-data font-bold text-on-surface">$189,500</span></span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded bg-tertiary"></span>
+<span class="text-on-surface-variant">Operadores: <span class="font-code-data font-bold text-on-surface">$142,300</span></span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded bg-surface-variant"></span>
+<span class="text-on-surface-variant">Taller: <span class="font-code-data font-bold text-on-surface">$85,200</span></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Operational Table Section: Viajes Recientes en Ruta -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<!-- Table Header Controls -->
+<div class="p-space-lg flex flex-col md:flex-row md:items-center md:justify-between gap-space-md bg-surface-container-lowest">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">alt_route</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold">Viajes Recientes en Ruta</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Monitoreo activo de Carta Porte, asignación vehicular y balance comercial</p>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm">
+<!-- Quick search in table -->
+<div class="relative w-64">
+<span class="material-symbols-outlined absolute left-2.5 top-1/2 -translate-y-1/2 text-[16px] text-outline pointer-events-none">filter_list</span>
+<input class="w-full h-8 pl-8 pr- space-md bg-surface-container-low text-on-surface placeholder:text-outline font-body-sm text-body-sm rounded outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary transition-all" placeholder="Filtrar por ruta, operador, tracto..." type="text">
+</div>
+<!-- Filter pills -->
+<div class="flex items-center gap-1 bg-surface-container-low p-1 rounded-lg">
+<button class="px-space-sm py-1 bg-surface-container-lowest text-primary shadow-sm rounded text-label-md font-label-md font-bold" onclick="filterTable('all')">Todos (28)</button>
+<button class="px-space-sm py-1 text-on-surface-variant hover:text-on-surface rounded text-label-md font-label-md font-medium" onclick="filterTable('transito')">En Tránsito (18)</button>
+<button class="px-space-sm py-1 text-on-surface-variant hover:text-on-surface rounded text-label-md font-label-md font-medium" onclick="filterTable('retorno')">Retorno (4)</button>
+<button class="px-space-sm py-1 text-on-surface-variant hover:text-on-surface rounded text-label-md font-label-md font-medium" onclick="filterTable('entregado')">Entregado (6)</button>
+</div>
+<button class="h-8 px-space-sm bg-surface-container-low text-on-surface-variant hover:text-primary rounded flex items-center justify-center transition-colors" title="Actualizar datos">
+<span class="material-symbols-outlined text-[18px]">refresh</span>
+</button>
+</div>
+</div>
+<!-- Data Table Responsive Wrapper -->
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low h-9 text-on-surface-variant font-label-md text-label-md uppercase tracking-wider">
+<th class="px-space-md font-semibold">Folio / Modalidad</th>
+<th class="px-space-md font-semibold">Fecha Despacho</th>
+<th class="px-space-md font-semibold min-w-[220px]">Ruta (Origen → Destino)</th>
+<th class="px-space-md font-semibold min-w-[180px]">Operador</th>
+<th class="px-space-md font-semibold">Tracto &amp; Caja</th>
+<th class="px-space-md font-semibold text-right">Importe Flete</th>
+<th class="px-space-md font-semibold text-center">Cobranza</th>
+<th class="px-space-md font-semibold text-center">Estatus Viaje</th>
+<th class="px-space-md font-semibold text-right">Acciones</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container font-body-sm text-body-sm text-on-surface">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors h-14 group">
+<td class="px-space-md">
+<div class="flex flex-col">
+<span class="font-code-data text-code-data font-bold text-primary">VJ-2024-0891</span>
+<span class="inline-block mt-0.5 px-1.5 py-0.2 rounded text-[10px] font-bold bg-surface-container text-primary tracking-wide uppercase w-max">Normal</span>
+</div>
+</td>
+<td class="px-space-md">
+<div class="flex flex-col font-code-data text-[11px]">
+<span class="text-on-surface font-semibold">24/Oct/2024</span>
+<span class="text-on-surface-variant">06:30 hrs</span>
+</div>
+</td>
+<td class="px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="font-medium text-on-surface">Monterrey, NL</span>
+<span class="material-symbols-outlined text-[16px] text-primary shrink-0">arrow_forward</span>
+<span class="font-bold text-on-surface">Guadalajara, JAL</span>
+</div>
+<span class="font-code-data text-[10px] text-on-surface-variant">Distancia: 785 km • Autopista 57/80</span>
+</td>
+<td class="px-space-md">
+<div class="flex items-center gap-space-sm">
+<img class="w-8 h-8 rounded-full object-cover shrink-0" data-alt="Close-up professional portrait of a Mexican truck driver wearing a company uniform and baseball cap in a fleet yard with bright natural morning lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZA-8oVG0MH7RF_dvcIO3IyCshpToHnVle52Bt4Ihnees9SmmbkT83x9T9TPIvfFUEYprGc4Nn48vH86TjSrg2pHKb4eAZgta0QXcj7_I26fJXYcBRyO95lYShY162WfSOQXh3rLKhKWfo-YXaBgXLMTwHzb8RUcJSPiO4br08p4nwze852EvW2OfOkPbQemGV-eye7aEAOB80rZ16UZMJoKQQNUSds41MbfsJx_sw">
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface truncate">Roberto Garza L.</span>
+<a class="font-code-data text-[10px] text-on-surface-variant hover:text-primary flex items-center gap-0.5" href="tel:8112345678">
+<span class="material-symbols-outlined text-[12px]">call</span> +52 (81) 1234-5678
+                  </a>
+</div>
+</div>
+</td>
+<td class="px-space-md">
+<div class="flex flex-col font-code-data text-code-data">
+<span class="font-bold text-on-surface">T-104 <span class="font-normal text-on-surface-variant text-[11px]">(Kenworth T680)</span></span>
+<span class="text-on-surface-variant text-[11px]">C-042 (Seca 53ft)</span>
+</div>
+</td>
+<td class="px-space-md text-right font-code-data text-code-data font-bold text-on-surface">
+              $38,500 <span class="text-[10px] text-on-surface-variant font-normal">MXN</span>
+</td>
+<td class="px-space-md text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full text-label-md font-label-md font-bold bg-surface-container text-primary">
+                Pagado
+              </span>
+</td>
+<td class="px-space-md text-center">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-label-md font-label-md font-bold bg-surface-variant text-surface-tint">
+<span class="w-2 h-2 rounded-full bg-surface-tint animate-ping"></span>
+                En Tránsito
+              </span>
+</td>
+<td class="px-space-md text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="px-2 py-1 rounded bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md font-bold transition-colors">
+                  Detalle
+                </button>
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors h-14 group">
+<td class="px-space-md">
+<div class="flex flex-col">
+<span class="font-code-data text-code-data font-bold text-primary">VJ-2024-0890</span>
+<span class="inline-block mt-0.5 px-1.5 py-0.2 rounded text-[10px] font-bold bg-surface-container-high text-secondary-container tracking-wide uppercase w-max">Retorno</span>
+</div>
+</td>
+<td class="px-space-md">
+<div class="flex flex-col font-code-data text-[11px]">
+<span class="text-on-surface font-semibold">24/Oct/2024</span>
+<span class="text-on-surface-variant">04:15 hrs</span>
+</div>
+</td>
+<td class="px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="font-medium text-on-surface">Laredo, TAMPS</span>
+<span class="material-symbols-outlined text-[16px] text-primary shrink-0">arrow_forward</span>
+<span class="font-bold text-on-surface">Escobedo, NL</span>
+</div>
+<span class="font-code-data text-[10px] text-on-surface-variant">Distancia: 220 km • Cruce Puente III</span>
+</td>
+<td class="px-space-md">
+<div class="flex items-center gap-space-sm">
+<img class="w-8 h-8 rounded-full object-cover shrink-0" data-alt="Portrait of an experienced senior truck driver wearing glasses and safety vest in front of a modern blue commercial transport truck depot." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVGIopp0BcZ4WXFWy0zUNcXciz0xtVa4i0GoDwVUTScEUcrFoty0V-Z5uE2nHzvdiZtO1dJKvRLQG57lJ5Ptl3hnccrV2dGE7wvs2jSDcj6cE3Jc9cWFR27U8O7nDLbrCGzkvFGcSlnFvZVu6HLvyxd67B27f19fVWV8u57q3kqcdy_rc-k4NKGe6tSWUUj5HpizZ5gbhnK5uwZ1tAKZMOpHVdXQ-te1d2Llv_ujJd">
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface truncate">Alejandro Morales</span>
+<a class="font-code-data text-[10px] text-on-surface-variant hover:text-primary flex items-center gap-0.5" href="tel:8677112233">
+<span class="material-symbols-outlined text-[12px]">call</span> +52 (867) 711-2233
+                  </a>
+</div>
+</div>
+</td>
+<td class="px-space-md">
+<div class="flex flex-col font-code-data text-code-data">
+<span class="font-bold text-on-surface">T-115 <span class="font-normal text-on-surface-variant text-[11px]">(Freightliner Cascadia)</span></span>
+<span class="text-on-surface-variant text-[11px]">C-019 (Plataforma 48ft)</span>
+</div>
+</td>
+<td class="px-space-md text-right font-code-data text-code-data font-bold text-on-surface">
+              $24,000 <span class="text-[10px] text-on-surface-variant font-normal">MXN</span>
+</td>
+<td class="px-space-md text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full text-label-md font-label-md font-bold bg-tertiary-fixed text-on-tertiary-fixed">
+                Pendiente
+              </span>
+</td>
+<td class="px-space-md text-center">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-label-md font-label-md font-bold bg-surface-variant text-surface-tint">
+<span class="w-2 h-2 rounded-full bg-surface-tint animate-ping"></span>
+                En Tránsito
+              </span>
+</td>
+<td class="px-space-md text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="px-2 py-1 rounded bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md font-bold transition-colors">
+                  Detalle
+                </button>
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors h-14 group">
+<td class="px-space-md">
+<div class="flex flex-col">
+<span class="font-code-data text-code-data font-bold text-primary">VJ-2024-0888</span>
+<span class="inline-block mt-0.5 px-1.5 py-0.2 rounded text-[10px] font-bold bg-surface-container text-primary tracking-wide uppercase w-max">Normal</span>
+</div>
+</td>
+<td class="px-space-md">
+<div class="flex flex-col font-code-data text-[11px]">
+<span class="text-on-surface font-semibold">23/Oct/2024</span>
+<span class="text-on-surface-variant">22:00 hrs</span>
+</div>
+</td>
+<td class="px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="font-medium text-on-surface">Toluca, MEX</span>
+<span class="material-symbols-outlined text-[16px] text-primary shrink-0">arrow_forward</span>
+<span class="font-bold text-on-surface">Veracruz, VER</span>
+</div>
+<span class="font-code-data text-[10px] text-on-surface-variant">Distancia: 430 km • Corredor Portuario</span>
+</td>
+<td class="px-space-md">
+<div class="flex items-center gap-space-sm">
+<img class="w-8 h-8 rounded-full object-cover shrink-0" data-alt="Headshot photo of a confident young logistics transport driver in a safety polo shirt with warm indoor lighting and clean background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxR8RanGcRFThLWztFxMHQicX_MHdE-_ggUloHQk4yDqIhmzDkBWvYSW_SS18QoINReS2DC3bo-hf0g21A0uq7lltloPzbNbjiNeTxeEQBL2uvQeE9PsWSkeQ8fHG45U7FO1xZ_nr1satNPNMH-9dJJsn-gLPamPYCox_lEaGxIlwvUNYDOOwsbHQpN9SQo9QP771tIysRD4FITF952LhYgXPqt1iTmWObkVwYlI2s">
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface truncate">Jesús Valenzuela</span>
+<a class="font-code-data text-[10px] text-on-surface-variant hover:text-primary flex items-center gap-0.5" href="tel:7229988776">
+<span class="material-symbols-outlined text-[12px]">call</span> +52 (722) 998-8776
+                  </a>
+</div>
+</div>
+</td>
+<td class="px-space-md">
+<div class="flex flex-col font-code-data text-code-data">
+<span class="font-bold text-on-surface">T-121 <span class="font-normal text-on-surface-variant text-[11px]">(Volvo VNL 760)</span></span>
+<span class="text-on-surface-variant text-[11px]">C-055 (Refrigerada 53ft)</span>
+</div>
+</td>
+<td class="px-space-md text-right font-code-data text-code-data font-bold text-on-surface">
+              $45,200 <span class="text-[10px] text-on-surface-variant font-normal">MXN</span>
+</td>
+<td class="px-space-md text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full text-label-md font-label-md font-bold bg-surface-container text-primary">
+                Pagado
+              </span>
+</td>
+<td class="px-space-md text-center">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-label-md font-label-md font-bold bg-surface-container text-primary">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                Entregado
+              </span>
+</td>
+<td class="px-space-md text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="px-2 py-1 rounded bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md font-bold transition-colors">
+                  Detalle
+                </button>
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors h-14 group">
+<td class="px-space-md">
+<div class="flex flex-col">
+<span class="font-code-data text-code-data font-bold text-primary">VJ-2024-0885</span>
+<span class="inline-block mt-0.5 px-1.5 py-0.2 rounded text-[10px] font-bold bg-surface-container text-primary tracking-wide uppercase w-max">Normal</span>
+</div>
+</td>
+<td class="px-space-md">
+<div class="flex flex-col font-code-data text-[11px]">
+<span class="text-on-surface font-semibold">24/Oct/2024</span>
+<span class="text-on-surface-variant">08:00 hrs</span>
+</div>
+</td>
+<td class="px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="font-medium text-on-surface">San Luis Potosí, SLP</span>
+<span class="material-symbols-outlined text-[16px] text-primary shrink-0">arrow_forward</span>
+<span class="font-bold text-on-surface">Reynosa, TAMPS</span>
+</div>
+<span class="font-code-data text-[10px] text-on-surface-variant">Distancia: 610 km • Carga Automotriz</span>
+</td>
+<td class="px-space-md">
+<div class="flex items-center gap-space-sm">
+<img class="w-8 h-8 rounded-full object-cover shrink-0" data-alt="Portrait of an experienced heavy truck driver in a navy blue work jacket smiling outdoors near a logistics dispatch terminal." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDREm3lSljrZyTYlwytzLgQIk2QikSalyRWG6VFv7vGeiVQ2Yzgd2NgBGGgKi6fGVdVEsuU_xib9J7ymaXJtby4OSGftTbSOD6zbwzeRCO2UK9qCJyPvEM18NDIzEFadCJ9CNYznFizTzs3JjddS_0_VLpnMIT5m5ILqT5R5GjFUKSMXOC2u-xueZMqIKH11nQ29XMznTaPoszIlNo1jg_H9FGDIe4Clo1bU9OQfR1z">
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface truncate">Martín Cárdenas</span>
+<a class="font-code-data text-[10px] text-on-surface-variant hover:text-primary flex items-center gap-0.5" href="tel:4441239870">
+<span class="material-symbols-outlined text-[12px]">call</span> +52 (444) 123-9870
+                  </a>
+</div>
+</div>
+</td>
+<td class="px-space-md">
+<div class="flex flex-col font-code-data text-code-data">
+<span class="font-bold text-on-surface">T-098 <span class="font-normal text-on-surface-variant text-[11px]">(Kenworth T880)</span></span>
+<span class="text-on-surface-variant text-[11px]">C-031 (Seca 53ft)</span>
+</div>
+</td>
+<td class="px-space-md text-right font-code-data text-code-data font-bold text-on-surface">
+              $33,700 <span class="text-[10px] text-on-surface-variant font-normal">MXN</span>
+</td>
+<td class="px-space-md text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full text-label-md font-label-md font-bold bg-tertiary-fixed text-on-tertiary-fixed">
+                Pendiente
+              </span>
+</td>
+<td class="px-space-md text-center">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-label-md font-label-md font-bold bg-surface-container-high text-primary">
+<span class="material-symbols-outlined text-[14px]">hourglass_top</span>
+                Cargando
+              </span>
+</td>
+<td class="px-space-md text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="px-2 py-1 rounded bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md font-bold transition-colors">
+                  Detalle
+                </button>
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Footer / Pagination -->
+<div class="px-space-lg py-space-sm bg-surface-container-lowest flex flex-col sm:flex-row sm:items-center sm:justify-between gap-space-sm border-t border-surface-container">
+<div class="font-body-sm text-body-sm text-on-surface-variant">
+        Mostrando <span class="font-semibold text-on-surface font-code-data">4</span> de <span class="font-semibold text-on-surface font-code-data">28</span> viajes activos en ruta
+      </div>
+<div class="flex items-center gap-1 font-label-md text-label-md">
+<button class="px-2 py-1 rounded text-on-surface-variant hover:bg-surface-container disabled:opacity-40" disabled="">Anterior</button>
+<button class="w-7 h-7 rounded bg-primary text-on-primary font-bold flex items-center justify-center">1</button>
+<button class="w-7 h-7 rounded hover:bg-surface-container text-on-surface flex items-center justify-center">2</button>
+<button class="w-7 h-7 rounded hover:bg-surface-container text-on-surface flex items-center justify-center">3</button>
+<span class="px-1 text-on-surface-variant">...</span>
+<button class="w-7 h-7 rounded hover:bg-surface-container text-on-surface flex items-center justify-center">7</button>
+<button class="px-2 py-1 rounded text-primary hover:bg-surface-container font-semibold">Siguiente</button>
+</div>
+</div>
+</div>
+<!-- Operational Health & Live Fleet Dispatch Terminal Strip -->
+<div class="p-space-md bg-surface-container-lowest rounded-xl shadow-sm flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="p-2.5 rounded-lg bg-surface-container text-primary shrink-0">
+<span class="material-symbols-outlined text-[24px]">satellite_alt</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Conectividad GPS Satelital y Telemetría CAN-Bus</span>
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">34 tractos transmitiendo velocidad, RPM, presión de llantas y nivel de combustible en tiempo real cada 30 segundos.</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="h-8 px-space-md rounded bg-surface-container-low text-on-surface font-label-md text-label-md font-semibold hover:bg-surface-container transition-colors">
+        Ver Mapa Satelital
+      </button>
+<button class="h-8 px-space-md rounded bg-primary text-on-primary font-label-md text-label-md font-bold hover:bg-primary-container transition-colors shadow-sm">
+        Consola de Monitoreo
+      </button>
+</div>
+</div>
+</div>
+<script>
+  function setActivePeriod(btn) {
+    const parent = document.getElementById('period-selector');
+    if (!parent) return;
+    const buttons = parent.querySelectorAll('button');
+    buttons.forEach(b => {
+      b.className = 'px-space-md py-1 rounded text-label-md font-label-md text-on-surface-variant hover:text-on-surface transition-colors';
+    });
+    btn.className = 'px-space-md py-1 rounded bg-surface-container-lowest text-primary shadow-sm text-label-md font-label-md font-bold transition-all';
+  }
+
+  function filterTable(status) {
+    const rows = document.querySelectorAll('tbody tr');
+    rows.forEach(r => {
+      if (status === 'all') {
+        r.style.display = '';
+      } else if (status === 'transito' && !r.innerText.includes('En Tránsito')) {
+        r.style.display = 'none';
+      } else if (status === 'retorno' && !r.innerText.includes('Retorno')) {
+        r.style.display = 'none';
+      } else if (status === 'entregado' && !r.innerText.includes('Entregado')) {
+        r.style.display = 'none';
+      } else {
+        r.style.display = '';
+      }
+    });
+  }
+</script></main></div></body></html>
